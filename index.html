@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Five years of us</title>
+<meta name="description" content="Five years, a few thousand laughs, and every photo we could fit on one page.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Young+Serif&family=Caveat:wght@500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --plum:#1f1426; --plum2:#2c1d36; --rose:#f3a6b6; --lime:#d8f35a; --paper:#fbf3ee; --mute:#c9b7cf;
+  --serif:"Young Serif",Georgia,serif; --sans:"DM Sans",system-ui,sans-serif; --hand:"Caveat",cursive;
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{background:var(--plum);color:var(--paper);font:400 1.05rem/1.7 var(--sans);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--lime);outline-offset:3px}
+
+/* hero */
+.hero{min-height:100svh;display:grid;grid-template-columns:1.1fr 1fr;align-items:center;gap:clamp(1.5rem,5vw,5rem);padding:clamp(1.5rem,5vw,4rem);max-width:1300px;margin:auto}
+.hero h1{font:400 clamp(3.6rem,10vw,8rem)/.92 var(--serif);letter-spacing:-.02em;color:var(--paper)}
+.hero h1 span{display:block;color:var(--rose)}
+.hero p.lead{margin-top:1.5rem;max-width:30rem;color:var(--mute);font-size:1.15rem}
+.hand{font:500 1.6rem var(--hand);color:var(--lime);margin-top:1.2rem}
+.arch{border-radius:999px 999px 1.2rem 1.2rem;overflow:hidden;aspect-ratio:3/4;box-shadow:0 0 0 10px var(--plum2),0 0 0 11px var(--rose);animation:rise 1.2s ease-out both}
+.arch img{width:100%;height:100%;object-fit:cover;object-position:60% 50%}
+@keyframes rise{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+
+/* counter */
+.count{display:flex;flex-wrap:wrap;gap:.6rem 1.8rem;margin-top:2rem}
+.count div{font:400 2.2rem/1 var(--serif);color:var(--paper)}
+.count small{display:block;font:400 .85rem var(--sans);color:var(--mute);margin-top:.3rem}
+
+/* chapters */
+main{max-width:1200px;margin:auto;padding:0 clamp(1.2rem,4vw,3rem)}
+.chapter{padding:clamp(3rem,8vw,6rem) 0;border-top:1px solid var(--plum2)}
+.chapter header{max-width:38rem;margin-bottom:2rem}
+.chapter h2{font:400 clamp(2rem,5vw,3.2rem)/1.1 var(--serif);color:var(--rose)}
+.chapter header p{margin-top:.9rem;color:var(--mute)}
+.wall{columns:3 280px;column-gap:1rem}
+.wall figure{break-inside:avoid;margin:0 0 1rem;position:relative;border-radius:.9rem;overflow:hidden;background:var(--plum2)}
+.wall button{all:unset;display:block;cursor:zoom-in;width:100%}
+.wall button:focus-visible{outline:3px solid var(--lime);outline-offset:-3px}
+.wall img{width:100%;height:auto;transition:transform .5s}
+.wall button:hover img{transform:scale(1.03)}
+.wall figcaption{position:absolute;left:0;right:0;bottom:0;padding:2.2rem 1rem .8rem;font:500 1.3rem var(--hand);color:#fff;background:linear-gradient(transparent,rgba(20,8,28,.8));pointer-events:none}
+
+/* letter */
+.letter{max-width:40rem;margin:0 auto;padding:clamp(3rem,8vw,6rem) 0;border-top:1px solid var(--plum2)}
+.letter h2{font:400 clamp(2rem,5vw,3.2rem)/1.1 var(--serif);color:var(--rose);margin-bottom:1.5rem}
+.letter p{margin-bottom:1.1rem;font-size:1.12rem}
+.reasons{list-style:none;padding:0;margin:2rem 0}
+.reasons li{padding:.7rem 0 .7rem 1.6rem;border-bottom:1px solid var(--plum2);position:relative}
+.reasons li::before{content:"♥";position:absolute;left:0;color:var(--rose)}
+.sign{font:500 2rem var(--hand);color:var(--lime);margin-top:1.5rem}
+footer{text-align:center;padding:3rem 1rem 4rem;color:var(--mute)}
+footer b{display:block;font:400 clamp(2rem,6vw,3.6rem)/1.1 var(--serif);color:var(--paper);margin-bottom:.6rem}
+
+/* lightbox */
+dialog{border:0;background:transparent;padding:0;max-width:96vw;max-height:94vh;color:#fff}
+dialog::backdrop{background:rgba(15,6,20,.92)}
+dialog img{max-height:84vh;width:auto;margin:auto;border-radius:.6rem}
+dialog p{text-align:center;font:500 1.5rem var(--hand);margin-top:.6rem}
+dialog button{position:fixed;top:1rem;right:1rem;background:var(--rose);color:var(--plum);border:0;border-radius:2rem;padding:.55rem 1.1rem;font:500 1rem var(--sans);cursor:pointer}
+
+@media(max-width:800px){.hero{grid-template-columns:1fr;padding-top:2.5rem}.arch{max-width:420px;margin:auto;order:-1}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<section class="hero">
+  <div>
+    <h1>Five years <span>of us.</span></h1>
+    <p class="lead">Today it's been five years since we started. I made you a little place for all of it: the laughs, the rain, the late dinners, and a lot of faces I'd pull again.</p>
+    <p class="hand">16 October 2021 → forever</p>
+    <div class="count" aria-live="polite" id="count"></div>
+  </div>
+  <div class="arch"><img src="IMG_1092.JPG" alt="The two of us sitting together on a mossy stone bench in the pine forest"></div>
+</section>
+
+<main>
+
+  <section class="chapter">
+    <header>
+      <h2>Where it began</h2>
+      <p>Masks, filters, metro platforms and a lot of nerves. We had no idea we were starting the best thing either of us would ever do.</p>
+    </header>
+    <div class="wall">
+      <figure><button><img src="Snapchat-337476275.jpg" alt="Mirror selfie, her in a green kurta, me behind her in a black mask" loading="lazy"></button><figcaption>Mirror selfie era</figcaption></figure>
+      <figure><button><img src="Snapchat-878579870.jpg" alt="An early selfie with heart filters over our heads" loading="lazy"></button><figcaption>Hearts over our heads, even then</figcaption></figure>
+      <figure><button><img src="Snapchat-1953092798.jpg" alt="A selfie on a metro platform, both of us grinning" loading="lazy"></button><figcaption>Metro rides with you</figcaption></figure>
+    </div>
+  </section>
+
+  <section class="chapter">
+    <header>
+      <h2>Everyday us</h2>
+      <p>Movie nights, coffee in hand, a cozy room and a heart made with my fingers because I run out of words. The ordinary days are my favourites.</p>
+    </header>
+    <div class="wall">
+      <figure><button><img src="IMG_0290.JPG" alt="Us leaning heads together at the cinema, her with sunglasses on her head, me holding a coffee" loading="lazy"></button><figcaption>Movie date, coffee, you</figcaption></figure>
+      <figure><button><img src="IMG_1175.JPG" alt="A cozy home selfie, her winking, me smiling behind her" loading="lazy"></button><figcaption>Home is wherever you wink at me</figcaption></figure>
+      <figure><button><img src="IMG_0073.JPG" alt="Me smiling and making a heart with both hands" loading="lazy"></button><figcaption>This one is for you</figcaption></figure>
+    </div>
+  </section>
+
+  <section class="chapter">
+    <header>
+      <h2>Dinners under the red umbrella</h2>
+      <p>Cheek kisses, silly roars, squished cheeks and the biggest smiles. You make every table feel like the best seat in the house.</p>
+    </header>
+    <div class="wall">
+      <figure><button><img src="IMG_1144.JPG" alt="Me kissing her on the cheek under red umbrellas" loading="lazy"></button><figcaption>Stolen kiss</figcaption></figure>
+      <figure><button><img src="IMG_1146.JPG" alt="Me roaring playfully while she smiles, her chin held in my hand" loading="lazy"></button><figcaption>Me: scary. You: unbothered</figcaption></figure>
+      <figure><button><img src="IMG_1149.JPG" alt="Both of us laughing with big smiles" loading="lazy"></button><figcaption>The laugh I'd pay anything for</figcaption></figure>
+      <figure><button><img src="IMG_1156.JPG" alt="Her winking with her cheek in my hand" loading="lazy"></button><figcaption>That wink. Every time.</figcaption></figure>
+    </div>
+  </section>
+
+  <section class="chapter">
+    <header>
+      <h2>Rain, hills and borrowed raincoats</h2>
+      <p>Wet hair, neon ponchos, waterfalls, a very dramatic helmet and the greenest hills. Somehow the soggiest trip was the sunniest one.</p>
+    </header>
+    <div class="wall">
+      <figure><button><img src="IMG_1241.JPG" alt="Both in raincoats and helmets, giving the camera a side-eye with misty hills behind" loading="lazy"></button><figcaption>Helmet hair, don't care</figcaption></figure>
+      <figure><button><img src="IMG_1290.JPG" alt="Smiling in matching green and yellow raincoats by a river and terraced fields" loading="lazy"></button><figcaption>Twin raincoats</figcaption></figure>
+      <figure><button><img src="IMG_1292.JPG" alt="A kiss in raincoats with green hills behind us" loading="lazy"></button><figcaption>Kiss in the rain</figcaption></figure>
+      <figure><button><img src="IMG_1294.JPG" alt="Her smiling with eyes closed, hand on her cheek, raindrops on her face" loading="lazy"></button><figcaption>I could stare at this forever</figcaption></figure>
+      <figure><button><img src="IMG_1338.JPG" alt="A kiss on her cheek on a mountain viewpoint with layered hills behind" loading="lazy"></button><figcaption>Top of the world, with you</figcaption></figure>
+      <figure><button><img src="IMG_1416.JPG" alt="Sticking our tongues out in front of a waterfall" loading="lazy"></button><figcaption>Us at our most mature</figcaption></figure>
+    </div>
+  </section>
+
+  <section class="letter">
+    <h2>What I want to tell you</h2>
+    <p>Five years ago I didn't know that "us" would become my favourite word. Somewhere between the first awkward hellos and now, you became my home, my best friend, and the person I most want to tell everything to.</p>
+    <p>You've seen me at my goofiest and my grumpiest, and you stayed. You laugh at my jokes (even the bad ones), you pull faces right back at me, and you make ordinary days feel like holidays.</p>
+    <ul class="reasons">
+      <li>You turn every plan, even a rainy one, into a memory.</li>
+      <li>Your smile fixes my worst days without trying.</li>
+      <li>You're my calm, and my chaos, in the best proportions.</li>
+      <li>I'm still excited to see you, five years in.</li>
+    </ul>
+    <p>Thank you for choosing me, again and again. Here's to more mountains, more dinners, more terrible selfie faces, and a lifetime of us.</p>
+    <p class="sign">I love you. Happy 5 years, my love. ♥</p>
+  </section>
+
+</main>
+
+<footer>
+  <b>On to year six.</b>
+  Made with love, for you.
+</footer>
+
+<dialog id="box"><button id="x" aria-label="Close photo">Close</button><img alt=""><p></p></dialog>
+
+<script>
+// ---- Edit here ----
+const START = new Date(2021, 9, 16); // 16 Oct 2021 (month is 0-based)
+// -------------------
+
+(function(){
+  const el = document.getElementById('count');
+  const now = new Date();
+  if (now < START) { el.innerHTML = '<div>Tomorrow</div>'; }
+  else {
+    let y = now.getFullYear() - START.getFullYear();
+    let m = now.getMonth() - START.getMonth();
+    let d = now.getDate() - START.getDate();
+    if (d < 0) { m--; d += new Date(now.getFullYear(), now.getMonth(), 0).getDate(); }
+    if (m < 0) { y--; m += 12; }
+    const days = Math.floor((now - START) / 864e5);
+    const cell = (n, l) => `<div>${n}<small>${l}</small></div>`;
+    el.innerHTML = cell(y, 'years') + cell(m, 'months') + cell(d, 'days') + cell(days.toLocaleString(), 'days together');
+  }
+
+  const box = document.getElementById('box'), big = box.querySelector('img'), cap = box.querySelector('p');
+  document.querySelectorAll('.wall button').forEach(b => b.addEventListener('click', () => {
+    const i = b.querySelector('img');
+    big.src = i.src; big.alt = i.alt; cap.textContent = b.parentElement.querySelector('figcaption').textContent;
+    box.showModal();
+  }));
+  document.getElementById('x').onclick = () => box.close();
+  box.addEventListener('click', e => { if (e.target === box) box.close(); });
+})();
+</script>
+</body>
+</html>
